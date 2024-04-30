@@ -77,7 +77,7 @@
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
-  services.xserver.layout = "colemak";
+  services.xserver.xkb.layout = "colemak";
 
   services = {
     displayManager.sddm = {
