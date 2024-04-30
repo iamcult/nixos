@@ -33,7 +33,6 @@
       "/var/log"
       "/var/lib/bluetooth"
       "/var/lib/fprint"
-      "/var/lib/sddm/.config"
       "/etc/NetworkManager/system-connections"
       "/etc/secureboot"
     ];
