@@ -42,6 +42,7 @@
     spotify
     nix-index
     colorized-logs
+    kdePackages.qtmultimedia
   ];
 
   home.stateVersion = "23.11";
