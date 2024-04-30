@@ -36,8 +36,7 @@
   };
 
   home.packages = with pkgs; [
-    librewolf
-    nyxt
+    firefox
     pfetch
     vesktop
     spotify
