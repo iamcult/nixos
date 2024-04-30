@@ -39,6 +39,7 @@
     librewolf
     pfetch
     vesktop
+    spotify
     nix-index
   ];
 
