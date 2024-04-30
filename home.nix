@@ -37,6 +37,7 @@
 
   home.packages = with pkgs; [
     librewolf
+    nyxt
     pfetch
     vesktop
     spotify
