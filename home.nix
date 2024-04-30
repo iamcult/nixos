@@ -40,7 +40,6 @@
     pfetch
     vesktop
     spotify
-    nix-index
   ];
 
   home.stateVersion = "23.11";
