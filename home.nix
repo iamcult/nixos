@@ -36,7 +36,6 @@
   };
 
   home.packages = with pkgs; [
-    nyxt
     librewolf
     pfetch
     vesktop
