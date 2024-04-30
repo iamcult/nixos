@@ -94,6 +94,9 @@
     pulse.enable = true;
   };
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   nix = {
     package = pkgs.nixFlakes;
     extraOptions = ''
