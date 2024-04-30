@@ -26,7 +26,7 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
       alias nixos-version="nix profile history --profile /nix/var/nix/profiles/system | tail -2 | grep Version | rev | cut -c 20- | rev"
-      alias commit-os="pushd ~/nixos; git commit -a; popd"
+      alias commit-os="pushd ~/nixos; nixos-version | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' | git commit -a -F - ; popd"
       alias rebuild-os="doas nixos-rebuild switch --flake ~/nixos#thing && commit-os"
       alias push-os="pushd ~/nixos; git push; popd"
       alias clear="clear && pfetch"
