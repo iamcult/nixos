@@ -83,6 +83,11 @@
       wayland.enable = true;
     };
     desktopManager.plasma6.enable = true;
+
+    mullvad-vpn = {
+      enable = true;
+      package = pkgs.mullvad-vpn;
+    };
   };
 
   hardware.pulseaudio.enable = false;
