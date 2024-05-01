@@ -42,7 +42,6 @@
     spotify
     nix-index
     catppuccin-papirus-folders
-    catppuccin-kde
     colorized-logs
     kdePackages.qtmultimedia
   ];
