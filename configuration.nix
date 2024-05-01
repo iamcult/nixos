@@ -35,6 +35,7 @@
       "/var/lib/fprint"
       "/etc/NetworkManager/system-connections"
       "/etc/secureboot"
+      "/etc/mullvad-vpn"
     ];
   };
 
