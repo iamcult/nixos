@@ -89,6 +89,8 @@
       enable = true;
       package = pkgs.mullvad-vpn;
     };
+
+    printing.enable = true;
   };
 
   hardware.pulseaudio.enable = false;
