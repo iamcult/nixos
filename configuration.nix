@@ -93,6 +93,8 @@
     printing.enable = true;
   };
 
+  programs.kdeconnect.enable = true;
+
   hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
