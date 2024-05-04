@@ -94,6 +94,12 @@
     xserver.xkb.variant = "colemak";
   };
 
+
+  console = {
+    earlySetup = true;
+    keyMap = "colemak";
+  };
+
   programs.kdeconnect.enable = true;
 
   hardware.pulseaudio.enable = false;
