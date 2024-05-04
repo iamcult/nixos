@@ -41,6 +41,7 @@
     vesktop
     spotify
     nix-index
+    python3
     catppuccin-papirus-folders
     colorized-logs
     kdePackages.qtmultimedia
