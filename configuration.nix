@@ -91,6 +91,7 @@
     };
 
     printing.enable = true;
+    xserver.xkb.variant = "colemak";
   };
 
   programs.kdeconnect.enable = true;
