@@ -72,7 +72,6 @@
 
   environment.systemPackages = with pkgs; [
     git
-    catppuccin-papirus-folders
     sbctl
   ];
 
