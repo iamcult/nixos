@@ -72,7 +72,6 @@
 
   environment.systemPackages = with pkgs; [
     sbctl
-    catppuccin-papirus-folders
   ];
 
   fonts.packages = with pkgs; [
