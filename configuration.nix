@@ -71,8 +71,8 @@
   }];
 
   environment.systemPackages = with pkgs; [
-    git
     sbctl
+    catppuccin-papirus-folders
   ];
 
   fonts.packages = with pkgs; [
