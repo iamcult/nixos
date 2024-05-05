@@ -40,7 +40,6 @@
     pfetch
     vesktop
     spotify
-    git
     nix-index
     python3
     catppuccin-papirus-folders
