@@ -33,7 +33,7 @@
       "/var/log"
       "/var/lib/bluetooth"
       "/var/lib/fprint"
-      "/var/lib/sddm"
+      #"/var/lib/sddm"
       "/etc/NetworkManager/system-connections"
       "/etc/secureboot"
       "/etc/mullvad-vpn"
