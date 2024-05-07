@@ -34,7 +34,7 @@
   fileSystems."/tmp" =
     { device = "rpool/local/tmp";
       fsType = "zfs";
-      options = [ "zfsutil" ];
+      options = [ "zfsutil" "umask=1777" ];
     };
 
   fileSystems."/persist" =
