@@ -31,6 +31,12 @@
       options = [ "zfsutil" ];
     };
 
+  fileSystems."/tmp" =
+    { device = "rpool/local/tmp";
+      fsType = "zfs";
+      options = [ "zfsutil" ];
+    };
+
   fileSystems."/persist" =
     { device = "rpool/safe/persist";
       fsType = "zfs";
