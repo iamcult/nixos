@@ -120,7 +120,7 @@
     '';
   };
 
-  nix.optimise.automatic = true;
+  nix.settings.auto-optimise-store = true;
 
   services.openssh.enable = true;
   system.stateVersion = "24.05"; # Did you read the comment?
