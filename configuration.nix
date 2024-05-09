@@ -121,6 +121,11 @@
   };
 
   nix.settings.auto-optimise-store = true;
+  nix.gc = {
+    automatic = true;
+    dates = "monthly";
+    options = "--delete-older-than 30d";
+  };
 
   services.openssh.enable = true;
   system.stateVersion = "24.05"; # Did you read the comment?
