@@ -35,11 +35,17 @@
     '';
   };
 
+  programs.vscode = {
+    enable = true;
+  };
+
   home.packages = with pkgs; [
     firefox
     pfetch
     vesktop
     spotify
+    prismlauncher
+
     nix-index
     python3
     catppuccin-papirus-folders
