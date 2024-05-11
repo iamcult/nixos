@@ -20,7 +20,7 @@
 
   boot.supportedFilesystems = [ "zfs" ];
 
-  boot.kernelPackages =
+  boot.kernelPackages = # idk how this works
     with builtins; with lib; let
       latestCompatibleVersion = config.boot.zfs.package.latestCompatibleLinuxPackages.kernel.version;
       zenPackages = filterAttrs (name: packages: hasSuffix "_zen" name && (tryEval packages).success) pkgs.linuxKernel.packages;
