@@ -99,7 +99,7 @@
     factorio = pkgs.factorio.override {
         username = "iamcult";
         token = ''
-          $(cat /run/agenix/factorio)
+          $(cat "${config.age.secrets.factorio.path}")
         '';
     };
   };
