@@ -90,7 +90,11 @@
     gamescopeSession.enable = true;
   };
 
-  age.secrets.factorio.file = ./secrets/factorio.age;
+  age.secrets.factorio = {
+    file = ./secrets/factorio.age;
+    mode = "0444";
+  };
+
   nixpkgs.config.packageOverrides = pkgs: {
     factorio = pkgs.factorio.override {
         username = "iamcult";
