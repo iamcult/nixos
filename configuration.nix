@@ -110,7 +110,6 @@
     xserver.xkb.variant = "colemak";
   };
 
-
   console = {
     earlySetup = true;
     keyMap = "colemak";
