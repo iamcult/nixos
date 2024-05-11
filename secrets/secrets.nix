@@ -7,5 +7,4 @@ let
 in
 {
   "password.age".publicKeys = [ cult thing ];
-  "factorio.age".publicKeys = [ cult thing ];
 }
