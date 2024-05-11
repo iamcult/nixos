@@ -7,4 +7,5 @@ let
 in
 {
   "password.age".publicKeys = [ cult thing ];
+  "github-oath.age".publicKeys = [ cult thing ];
 }

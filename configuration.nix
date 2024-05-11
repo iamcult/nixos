@@ -127,10 +127,13 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  age.secrets.github-oath.file = ./secrets/github-oath.age;
+
   nix = {
     package = pkgs.nixFlakes;
     extraOptions = ''
       experimental-features = nix-command flakes
+      !include ${config.age.secrets.github-oath.path}
     '';
   };
 
