@@ -22,7 +22,7 @@
         modules = [
           ./configuration.nix
           impermanence.nixosModules.impermanence
-	        lanzaboote.nixosModules.lanzaboote
+          lanzaboote.nixosModules.lanzaboote
           agenix.nixosModules.default
           {
             environment.systemPackages = [ agenix.packages.x86_64-linux.default ];
