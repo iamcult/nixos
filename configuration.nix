@@ -130,9 +130,11 @@
   age.secrets.github-oath.file = ./secrets/github-oath.age;
 
   nix = {
-    package = pkgs.nixFlakes;
+    settings.experimental-features = [
+      "flakes"
+      "nix-command"
+    ];
     extraOptions = ''
-      experimental-features = nix-command flakes
       !include ${config.age.secrets.github-oath.path}
     '';
   };
