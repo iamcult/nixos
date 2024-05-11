@@ -19,7 +19,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.supportedFilesystems = [ "zfs" ];
-  boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
   networking.hostId = "e5a29261";
   
   nixpkgs.config.allowUnfree = true;
