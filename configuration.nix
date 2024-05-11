@@ -90,6 +90,16 @@
     gamescopeSession.enable = true;
   };
 
+  age.secrets.factorio.file = ./secrets/factorio.age;
+  nixpkgs.config.packageOverrides = pkgs: {
+    factorio = pkgs.factorio.override {
+        username = "iamcult";
+        token = ''
+          $(cat "${config.age.secrets.factorio.path}")
+        '';
+    };
+  };
+
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
