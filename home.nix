@@ -50,6 +50,7 @@
     thunderbird
 
     nix-index
+    xorg.setxkbmap
     python3
     catppuccin-papirus-folders
     colorized-logs
