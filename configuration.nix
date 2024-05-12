@@ -130,20 +130,21 @@
   age.secrets.github-oath.file = ./secrets/github-oath.age;
 
   nix = {
-    settings.experimental-features = [
-      "flakes"
-      "nix-command"
-    ];
+    settings = {
+      experimental-features = [
+        "flakes"
+        "nix-command"
+      ];
+      auto-optimise-store = true;
+    };
+    gc = {
+      automatic = true;
+      dates = "monthly";
+      options = "--delete-older-than 30d";
+    };
     extraOptions = ''
       !include ${config.age.secrets.github-oath.path}
     '';
-  };
-
-  nix.settings.auto-optimise-store = true;
-  nix.gc = {
-    automatic = true;
-    dates = "monthly";
-    options = "--delete-older-than 30d";
   };
 
   services.openssh.enable = true;
