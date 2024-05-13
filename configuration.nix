@@ -41,7 +41,6 @@
       "/var/log"
       "/var/lib/bluetooth"
       "/var/lib/fprint"
-      #"/var/lib/sddm"
       "/etc/NetworkManager/system-connections"
       "/etc/secureboot"
       "/etc/mullvad-vpn"
@@ -50,8 +49,8 @@
 
   zramSwap.enable = true;
 
-  networking.hostName = "thing"; # Define your hostname.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.hostName = "thing";
+  networking.networkmanager.enable = true;
 
   time.timeZone = "America/New_York";
 
@@ -65,7 +64,7 @@
   users.users.cult = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" ];
     hashedPasswordFile = config.age.secrets.password.path;
   };
   programs.fish.enable = true;
