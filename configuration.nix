@@ -18,8 +18,6 @@
   };
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.plymouth.enable = true;
-
   boot.supportedFilesystems = [ "zfs" ];
 
   boot.kernelPackages = # idk how this works
