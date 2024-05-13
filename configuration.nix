@@ -129,9 +129,6 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
-  hardware.keyboard.qmk.enable = true;
-  services.udev.packages = [ pkgs.via ];
-
   age.secrets.github-oath.file = ./secrets/github-oath.age;
 
   nix = {

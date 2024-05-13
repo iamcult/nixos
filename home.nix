@@ -54,7 +54,6 @@
     prismlauncher
     thunderbird
 
-    via
     nix-index
     xorg.setxkbmap
     python3
