@@ -123,8 +123,10 @@
     pulse.enable = true;
   };
 
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
 
   hardware.keyboard.qmk.enable = true;
   services.udev.packages = [ pkgs.via ];
