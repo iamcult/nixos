@@ -34,7 +34,7 @@
         alias nixos-version="nix profile history --profile /nix/var/nix/profiles/system | tail -2 | grep Version | rev | cut -c 20- | rev"
         alias commit-os="pushd ~/nixos; nixos-version | ansi2txt | git commit -a -F - ; popd"
         alias rebuild-os="doas nixos-rebuild switch --flake ~/nixos#thing && commit-os"
-        alias update-os="nix flake update ~/nixos; git diff-index --quiet HEAD -- ; and echo 'Nothing to do.'; or doas nixos-rebuild switch --flake ~/nixos#thing && commit-os"
+        alias update-os="nix flake update ~/nixos; pushd ~/nixos; git diff-index --quiet HEAD -- ; and echo 'Nothing to do.' && popd; or doas nixos-rebuild switch --flake ~/nixos#thing && popd && commit-os"
         alias push-os="pushd ~/nixos; git push; popd"
         alias clear="clear && pfetch"
         pfetch
