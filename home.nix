@@ -54,6 +54,7 @@
     spotify
     prismlauncher
     thunderbird
+    bitwarden
 
     via
     nix-index
