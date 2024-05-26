@@ -52,7 +52,7 @@
   networking.hostName = "thing";
   networking.networkmanager.enable = true;
 
-  time.timeZone = "America/New_York";
+  services.automatic-timezoned.enable = true;
 
   age.secrets.password.file = ./secrets/password.age;
 
